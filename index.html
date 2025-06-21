@@ -106,17 +106,17 @@
   </section>
   <section class="contact">
   <h2>Contact Us</h2>
+  <section class="contact">
+  <h2>Contact Us</h2>
   <form name="contact" method="POST" data-netlify="true" action="/thank-you.html">
+    <input type="hidden" name="form-name" value="contact" />
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
     <input type="submit" value="Send Message">
+  </form>
+</section>
 
-  <div style="display:none;">
-    <form name="contact" netlify>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-    </form>
 </section>
 
   <section id="whatsapp-cta" style="text-align:center; padding:50px 20px;">
