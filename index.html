@@ -58,36 +58,10 @@
 .floating-whatsapp:hover {
   transform: scale(1.1);
 }
+
 .floating-whatsapp img {
   width: 30px;
   height: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  .floating-whatsapp {
-    width: auto;
-    height: auto;
-    border-radius: 30px;
-    padding: 10px 20px;
-    background-color: #25D366;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-  }
-
-  .floating-whatsapp img {
-    width: 24px;
-    height: 24px;
-  }
-
-  .floating-whatsapp span {
-    display: inline;
-    color: white;
-    font-weight: bold;
-    font-family: sans-serif;
-  }
 }
   </style>
 </head>
@@ -154,24 +128,6 @@
       <p>"Manish sir's teaching is simple, practical and powerful. Highly recommend for anyone starting out." <strong>- Kunal M.</strong></p>
     </div>
   </section>
-
-  <section class="contact">
-  <h2>Contact Us</h2>
-  <form id="contact-form" name="contact" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="contact" />
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-    <input type="submit" value="Send Message">
-  </form>
-  
-  <p id="thanks-message" style="display: none; color: green; font-weight: bold;">
-    ✅ Thank you! We received your message.
-  </p>
-
-</section>
-
-  </section>
   <footer>
   <p>© 2025 SGST Learning Academy. All rights reserved.</p>
   <div>
@@ -185,9 +141,7 @@
    class="floating-whatsapp"
    target="_blank"
    aria-label="Chat on WhatsApp">
-  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="24" height="24" />
-  <span>Contact us</span>
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
 </a>
-
 </body>
 </html>
