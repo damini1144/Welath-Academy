@@ -63,6 +63,24 @@
   width: 30px;
   height: 30px;
 }
+@keyframes pulseWhatsApp {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    transform: scale(1);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+    transform: scale(1.05);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    transform: scale(1);
+  }
+}
+
+.floating-whatsapp.blink {
+  animation: pulseWhatsApp 1.5s infinite;
+}
   </style>
 </head>
 <body>
@@ -138,10 +156,18 @@
 </footer>
 <script src="script.js"></script>
 <a href="https://wa.me/918451893965?text=Hi%2C%20I%20want%20to%20join%20your%20course"
-   class="floating-whatsapp"
+   class="floating-whatsapp blink"
    target="_blank"
    aria-label="Chat on WhatsApp">
-  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="24" height="24" />
 </a>
+<script>
+  window.addEventListener('scroll', () => {
+    const button = document.querySelector('.floating-whatsapp');
+    if (button && !button.classList.contains('blink')) {
+      button.classList.add('blink');
+    }
+  });
+</script>
 </body>
 </html>
