@@ -54,6 +54,21 @@
       100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); transform: scale(1); }
     }
     .floating-whatsapp.blink { animation: pulseWhatsApp 1.5s infinite; }
+    .blink-button {
+  animation: pulseWhatsApp 1s infinite;
+  display: inline-block;
+  background: #25D366;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+.blink-button i {
+  margin-right: 10px;
+}
+
   </style>
 
   <!-- Google Analytics Tag -->
@@ -64,13 +79,14 @@
     gtag('js', new Date());
     gtag('config', 'G-GSJYP7QM0M');
   </script>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header>
     <h1>Master the Stock Market</h1>
     <p>Learn technical analysis, trading psychology, and risk management from professionals. Build your financial future step-by-step.</p>
-    <a href="https://chat.whatsapp.com/ELN44X0PVOgJa4eUO5UXCQ" class="btn-primary" target="_blank">Join Our Free Learning Group</a>
+    <a href="https://chat.whatsapp.com/ELN44X0PVOgJa4eUO5UXCQ" class="blink-button" target="_blank">
+    <i class="fab fa-whatsapp"></i> Join Our Free Learning Group</a>
   </header>
   <section id="about">
     <h2>About Our Course</h2>
